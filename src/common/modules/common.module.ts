@@ -6,9 +6,11 @@ import {
     MatIconModule,
     MatListModule,
     MatCardModule,
+    MatBottomSheetModule,
     MatInputModule
 } from '@angular/material';
 import { CommonModule } from '@angular/common';
+import { SbAccountService } from '../../app/sb-account/account.service';
 @NgModule({
     declarations: [],
     exports: [
@@ -19,9 +21,9 @@ import { CommonModule } from '@angular/common';
         MatIconModule,
         MatListModule,
         MatCardModule,
+        MatBottomSheetModule,
         MatInputModule
-    ]
+    ],
+    providers: [SbAccountService]
 })
-export class SbCommonMatModule {
-
-}
+export class SbCommonMatModule {}

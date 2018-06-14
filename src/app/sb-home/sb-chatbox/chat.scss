@@ -1,0 +1,69 @@
+.chat {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    padding: 0;
+    width: 300px;
+    .user {
+        background-color: #3f51b5;
+        color: white;
+        padding: 10px 5px;
+        margin: 0;
+        display: flex;
+        .name {
+            width: 100%;
+        }
+        .btn-close {
+            position: absolute;
+            top: -20px;
+            right: 10px;
+        }
+    }
+    .content {
+        background-color: rgba(black, 0.1);
+        height: 300px;
+        margin: 0;
+        overflow-y: auto;
+        .row {
+            margin-bottom: 5px;
+            text-align: left;
+            padding: 0 10px;
+            .me {
+                border-radius: 1em;
+                background: white;
+                padding: 6px 12px;
+                color: rgb(83, 126, 206);
+                display: inline-block;
+            }
+            .friend {
+                border-radius: 1em;
+                background: rgb(83, 126, 206);
+                padding: 6px 12px;
+                color: white;
+                display: inline-block;
+            }
+            &.right {
+                text-align: right;
+            }
+        }
+    }
+    .control {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        background-color: #3f51b5;
+        align-items: flex-end;
+        .field-chat {
+            min-width: calc(100% - 88px);
+            padding-bottom: 5px;
+            min-height: 60px;
+        }
+        .btn-send {
+            width: 50px;
+            color: white;
+            background: rgb(83, 126, 206);
+            height: 32px;
+        }
+    }
+}
